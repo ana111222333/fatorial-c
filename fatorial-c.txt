@@ -1,0 +1,14 @@
+#include <stdio.h>
+
+int fatorial(int n);
+
+void main() {
+    int numero;
+
+    printf("Digite um numero: ");
+    scanf("%d", &numero);
+
+    printf("Fatorial de %d = %d\n", numero, fatorial(numero));
+
+    printf("Criado por Ana");
+}
