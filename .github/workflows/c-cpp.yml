@@ -10,10 +10,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
     - uses: actions/checkout@v4
 
+
     - name: compile
-      run: gcc test_fatorial.c -o test_fatorial
+      run: gcc fatorial.c function_fatorial.c -o fatorial
+
 
     - name: execute
-      run: ./test_fatorial
+      run: ./fatorial 5
+
+
+    - name: mostrar o conteúdo do arquivo criado
+      run: cat fatorial.txt
